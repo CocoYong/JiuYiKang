@@ -1,0 +1,24 @@
+//
+//  JiuYiKang.pch
+//  JiuYiKang
+//
+//  Created by MrZhang on 2017/8/2.
+//  Copyright © 2017年 MrZhang. All rights reserved.
+//
+
+#ifndef JiuYiKang_pch
+#define JiuYiKang_pch
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import "CommonDefines.h"
+#import "UtilitiesHelper.h"
+#import "MJExtension.h"
+#import "MBProgressHUD+ZYHud.h"
+#import "ZYDataRequest.h"
+#import "UIImageView+AFNetworking.h"
+#import "ITTDebug.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* JiuYiKang_pch */

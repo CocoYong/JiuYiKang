@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="01J-lp-oVM" customClass="FirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFU-gn-dfa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yindao2" translatesAutoresizingMaskIntoConstraints="NO" id="Ce7-kL-3rr">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yindao1" translatesAutoresizingMaskIntoConstraints="NO" id="En6-7k-4aL">
+                                        <rect key="frame" x="375" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWI-VF-HTe">
+                                        <rect key="frame" x="475" y="587" width="175" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="bpS-vC-sAA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="立即进入" backgroundImage="btn_1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ce7-kL-3rr" firstAttribute="leading" secondItem="zFU-gn-dfa" secondAttribute="leading" id="Na9-2g-PEP"/>
+                                    <constraint firstAttribute="trailing" secondItem="En6-7k-4aL" secondAttribute="trailing" id="W0T-Xi-Mbx"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ce7-kL-3rr" secondAttribute="bottom" id="cPi-Hy-HVO"/>
+                                    <constraint firstItem="Ce7-kL-3rr" firstAttribute="top" secondItem="zFU-gn-dfa" secondAttribute="top" id="o2l-a7-neo"/>
+                                    <constraint firstItem="En6-7k-4aL" firstAttribute="leading" secondItem="Ce7-kL-3rr" secondAttribute="trailing" id="q0D-a0-KA7"/>
+                                    <constraint firstItem="ZWI-VF-HTe" firstAttribute="leading" secondItem="En6-7k-4aL" secondAttribute="leading" constant="100" id="qQB-YF-wrd"/>
+                                    <constraint firstItem="En6-7k-4aL" firstAttribute="width" secondItem="Ce7-kL-3rr" secondAttribute="width" id="reK-51-BeR"/>
+                                    <constraint firstItem="En6-7k-4aL" firstAttribute="centerX" secondItem="ZWI-VF-HTe" secondAttribute="centerX" id="tpP-21-mzk"/>
+                                    <constraint firstItem="En6-7k-4aL" firstAttribute="height" secondItem="Ce7-kL-3rr" secondAttribute="height" id="uwN-Rq-4WD"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZWI-VF-HTe" secondAttribute="bottom" constant="40" id="way-Jo-gUb"/>
+                                    <constraint firstItem="En6-7k-4aL" firstAttribute="centerY" secondItem="Ce7-kL-3rr" secondAttribute="centerY" id="xDr-kT-rxK"/>
+                                </constraints>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchimage" translatesAutoresizingMaskIntoConstraints="NO" id="DR3-m9-YRa">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DR3-m9-YRa" secondAttribute="trailing" id="2fI-RC-Ash"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="DR3-m9-YRa" secondAttribute="bottom" id="KZl-5Z-WLE"/>
+                            <constraint firstItem="Ce7-kL-3rr" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="NyT-X8-uAD"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="zFU-gn-dfa" secondAttribute="bottom" id="OjF-VG-YdG"/>
+                            <constraint firstItem="zFU-gn-dfa" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Rqx-Gm-5ab"/>
+                            <constraint firstItem="DR3-m9-YRa" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="cvW-0w-NNU"/>
+                            <constraint firstAttribute="trailing" secondItem="zFU-gn-dfa" secondAttribute="trailing" id="e0R-fW-NJf"/>
+                            <constraint firstItem="DR3-m9-YRa" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="jBe-ox-qbg"/>
+                            <constraint firstItem="zFU-gn-dfa" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="pDO-Fb-Bf0"/>
+                            <constraint firstItem="Ce7-kL-3rr" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="u9N-Iw-wcY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="DR3-m9-YRa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="JoinButton" destination="ZWI-VF-HTe" id="obT-LQ-Me7"/>
+                        <outlet property="backScrollView" destination="zFU-gn-dfa" id="NXA-fi-sqG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_1" width="555" height="86"/>
+        <image name="launchimage" width="375" height="667"/>
+        <image name="yindao1" width="1242" height="2208"/>
+        <image name="yindao2" width="1242" height="2208"/>
+    </resources>
+</document>
